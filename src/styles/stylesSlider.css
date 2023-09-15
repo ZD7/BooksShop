@@ -1,0 +1,138 @@
+body * {
+    box-sizing: border-box;
+}
+
+.main-container {
+    padding-top: 119px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    color:#FFFFFF;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 27px;
+}
+
+
+.block__images {
+    width: 1120px;
+    height: 702px;
+    margin-bottom: 17px;
+}
+
+.header {
+    display: flex;
+}
+
+.content-header {
+    margin: 0px 0px 34px 0px;
+    margin-top: 0px;
+    color: #E3B873;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 37px;
+    text-transform: uppercase;
+    letter-spacing: -0.07em;  
+    width: 161px;
+    height: 66px;
+}
+
+hr {
+    margin-top: 51.64px;
+    margin-left: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+.content {
+    margin-bottom: 42px;
+    margin-top: 0px;
+    /* font-family: Nunito Sans; */
+}
+
+.table-header {
+    margin-top: 0px;
+    margin-bottom: 9px;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #E3B873;
+    width: 190px;
+}
+
+.content-table {
+    width: 161px;
+    margin-bottom: 55px;
+    margin-right: 29px;
+}
+
+.table-block {
+    display: flex;
+}
+
+.slider__arrows {
+    display: flex;
+    align-items: center;
+    margin-top: 24.64px;
+    height: 23.28px;
+    width: 240px;
+}
+
+.slider__dots {
+    display: flex;
+    justify-content: center;
+}
+
+.slider__dots-item {
+    width: 10px;
+    height: 10px;
+    background: #EFEEF6;    ;
+    border-radius: 50%;
+    margin-right: 17.54px;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.slider__dots-item:last-child {
+    margin-right: 0px;
+}
+
+.slider__dots-item:hover, .slider__dots-item.active {
+    background: #9E98DC;
+}
+
+.slider__images .image{
+    background-size: cover;
+    width: 1120px;
+    height: 702px;
+    opacity: 0;
+    transition: opacity 800ms ease;
+    position: absolute;
+}
+
+.slider__images .active {
+    opacity: 1;
+}
+
+@media screen and (max-width: 730px) {
+
+    .block__images {
+        width: 600px;
+        height: 375px;
+    }
+
+    .slider__images .image{
+        width: 600px;
+        height: 375px;
+    }
+}
+
+
